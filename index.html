@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meri Free Website</title>
+  <title>Flash Creations | Photography & Videography</title>
+
   <style>
     body {
       margin: 0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       background: #0f172a;
       color: #e5e7eb;
       line-height: 1.6;
@@ -15,86 +16,159 @@
     header {
       background: linear-gradient(135deg, #22c55e, #06b6d4);
       color: #022c22;
+      text-align: center;
       padding: 3rem 1.5rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background: #020617;
+      padding: 1rem;
       text-align: center;
     }
-    header h1 { font-size: 2.5rem; margin: 0 0 0.5rem; }
-    header p { font-size: 1.1rem; margin: 0; }
-    nav {
-      display: flex; gap: 1rem; justify-content: center;
-      background: #020617; padding: 0.75rem;
-      position: sticky; top: 0;
+    nav a {
+      color: #22c55e;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
     }
-    nav a { color: #a5b4fc; text-decoration: none; font-weight: 600; }
-    nav a:hover { text-decoration: underline; }
-    .container { max-width: 1000px; margin: auto; padding: 2rem 1.5rem; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
     .card {
-      background: #020617; border: 1px solid #1f2937; border-radius: 1rem;
-      padding: 1.25rem; box-shadow: 0 10px 20px rgba(0,0,0,.2);
+      background: #020617;
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
-    .card h3 { margin-top: 0; color: #93c5fd; }
-    .cta {
-      background: #22c55e; color: #022c22; border: none;
-      padding: 0.75rem 1.1rem; border-radius: 999px; font-weight: 700;
-      cursor: pointer;
+    h2 {
+      color: #22c55e;
+      margin-top: 0;
     }
-    .cta:hover { filter: brightness(0.95); }
-    footer { background: #020617; padding: 1.5rem; text-align: center; color: #94a3b8; }
-    .badge { display: inline-block; padding: 0.25rem 0.6rem; border-radius: 999px; background: #1e293b; color: #a5b4fc; font-size: 0.8rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 12px 20px;
+      background: #22c55e;
+      color: #022c22;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: 280px;
+      border-radius: 12px;
+      border: none;
+    }
+    footer {
+      background: #020617;
+      text-align: center;
+      padding: 1.5rem;
+      color: #94a3b8;
+    }
   </style>
 </head>
+
 <body>
-  <header>
-    <span class="badge">100% Free Website</span>
-    <h1>Flash Creations 📸🎬</h1>
-    <p>Professional Photo & Video Shoot • Creative Editing • Cinematic Stories</p>
-  </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<header>
+  <h1>Flash Creations</h1>
+  <p>Professional Photography, Videography & Creative Editing</p>
+</header>
 
-  <main class="container">
-    <section id="about" class="card">
-      <h3>About Flash Creations</h3>
-      <p>Flash Creations ek creative studio hai jo professional <strong>photo aur video shoot</strong> ke saath high‑quality <strong>editing</strong> services provide karta hai. Hum moments ko cinematic stories me convert karte hain — weddings, events, reels, ya brand shoots ke liye.</p>
-    </section>
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#youtube">YouTube</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <section id="services">
-      <h3>Our Services</h3>
-      <div class="grid">
-        <div class="card">
-          <h3>Photo Shoot</h3>
-          <p>Wedding, pre‑wedding, events, portraits aur product photography.</p>
-        </div>
-        <div class="card">
-          <h3>Video Shoot</h3>
-          <p>Cinematic wedding films, events coverage, reels aur brand videos.</p>
-        </div>
-        <div class="card">
-          <h3>Photo & Video Editing</h3>
-          <p>Professional retouching, color grading, reels editing aur highlights.</p>
-        </div>
+<div class="container">
+
+  <section id="about" class="card">
+    <h2>About Us</h2>
+    <p>
+      Flash Creations is a creative studio based in Lucknow, India, specializing in
+      professional photography, cinematic videography, and high-quality photo & video editing.
+      We capture moments with creativity, emotion, and precision.
+    </p>
+  </section>
+
+  <section id="services" class="card">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Photography</h3>
+        <p>Wedding, pre-wedding, events, portraits, and product photography.</p>
       </div>
-    </section>
+      <div class="card">
+        <h3>Videography</h3>
+        <p>Cinematic wedding films, event coverage, reels, and brand videos.</p>
+      </div>
+      <div class="card">
+        <h3>Editing</h3>
+        <p>Professional retouching, color grading, reels editing, and highlights.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact" class="card">
-      <h3>Contact Flash Creations</h3>
-      <p>📧 Email: <strong>flashcreations@email.com</strong></p>
-      <p>📞 Phone / WhatsApp: <strong>+91‑XXXXXXXXXX</strong></p>
-      <button class="cta" onclick="alert('Thanks! Flash Creations aapse jaldi contact karega 😊')">Get in Touch</button>
-    </section>
-  </main>
+  <section id="youtube" class="card">
+    <h2>YouTube Preview</h2>
+    <p>Watch our latest creative work on YouTube.</p>
 
-  <footer>
-    © <span id="year"></span> Meri Free Website. All rights reserved.
-  </footer>
+    <!-- Replace VIDEO_ID with any video from @flashcreations9900 -->
+    <iframe 
+      src="https://www.youtube.com/embed/VIDEO_ID" 
+      allowfullscreen>
+    </iframe>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <a class="btn" href="https://www.youtube.com/@flashcreations9900" target="_blank">
+      Visit Our YouTube Channel
+    </a>
+  </section>
+
+  <section id="contact" class="card">
+    <h2>Contact Us</h2>
+
+    <p><strong>📍 Address:</strong><br>
+      Tiwari Pur, Bakshi Ka Talab Near Chhathamill,<br>
+      Jankipuram Vistar, Lucknow, Uttar Pradesh, India
+    </p>
+
+    <p><strong>📞 Phone:</strong><br>
+      <a href="tel:8090000072">8090000072</a><br>
+      <a href="tel:9621389946">9621389946</a>
+    </p>
+
+    <p><strong>📧 Email:</strong><br>
+      flashcreations0@gmail.com
+    </p>
+
+    <a class="btn" href="https://wa.me/918090000072" target="_blank">
+      Chat on WhatsApp
+    </a>
+  </section>
+
+</div>
+
+<footer>
+  © 2026 Flash Creations | All Rights Reserved
+</footer>
+
 </body>
 </html>

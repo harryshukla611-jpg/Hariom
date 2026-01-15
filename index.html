@@ -2,147 +2,242 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Flash Creations | Wedding Photography</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flash Creations | Wedding Photography & Films</title>
+
 <style>
+*{box-sizing:border-box}
 body{
-margin:0;
-font-family: 'Poppins', sans-serif;
-background:#0e0e0e;
-color:#fff;
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#0b0f19;
+  color:#e5e7eb;
 }
-a{text-decoration:none;color:#fff}
-.section{padding:80px 10%}
-.hero{
-background:url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e') center/cover no-repeat;
-height:90vh;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
+a{text-decoration:none;color:inherit}
+
+/* HEADER */
+header{
+  background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+  url("https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e");
+  background-size:cover;
+  background-position:center;
+  padding:120px 20px;
+  text-align:center;
 }
-.hero h1{font-size:48px;letter-spacing:2px}
-.hero p{color:#ddd;margin:20px 0}
+header h1{
+  font-size:3rem;
+  margin:0;
+  color:#fff;
+}
+header p{
+  font-size:1.2rem;
+  color:#d1d5db;
+}
 .btn{
-border:1px solid #fff;
-padding:12px 28px;
-border-radius:30px;
-margin:10px;
-display:inline-block;
+  display:inline-block;
+  margin:15px 10px 0;
+  padding:12px 22px;
+  border-radius:30px;
+  border:1px solid #22c55e;
+  color:#22c55e;
+  font-weight:bold;
 }
+.btn:hover{background:#22c55e;color:#022c22}
+
+/* NAV */
+nav{
+  background:#020617;
+  padding:15px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+nav a{
+  margin:0 15px;
+  color:#22c55e;
+  font-weight:bold;
+}
+
+/* SECTIONS */
+.container{max-width:1200px;margin:auto;padding:60px 20px}
+.section-title{
+  text-align:center;
+  font-size:2rem;
+  color:#22c55e;
+  margin-bottom:30px;
+}
+.card{
+  background:#020617;
+  padding:25px;
+  border-radius:15px;
+  margin-bottom:30px;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+/* SERVICES */
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
 }
-.card img{width:100%;border-radius:12px}
-.card h3{margin:15px 0 10px}
-.dark-bg{background:#111}
-.center{text-align:center}
-.footer{
-padding:40px;
-background:#000;
-text-align:center;
-color:#aaa;
+.service img{
+  width:100%;
+  border-radius:12px;
+}
+.service h3{margin:15px 0 5px}
+
+/* VIDEOS */
+.video-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+.video-card iframe{
+  width:100%;
+  height:220px;
+  border-radius:12px;
+  border:none;
+}
+.video-title{
+  text-align:center;
+  margin-top:10px;
+  font-size:15px;
+}
+
+/* CONTACT */
+footer{
+  background:#020617;
+  padding:25px;
+  text-align:center;
+  color:#94a3b8;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+  header h1{font-size:2.2rem}
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-<div>
-<h1>WELCOME TO FLASH CREATIONS</h1>
-<p>Cinematic Wedding Photography & Films</p>
-<a class="btn" href="https://www.instagram.com/flashcreations2016" target="_blank">Instagram</a>
-<a class="btn" href="#videos">Watch Videos</a>
-</div>
-</div>
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#videos">Films</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-<!-- PRE WEDDING -->
-<section class="section">
-<h2 class="center">Pre-Wedding Photography</h2>
-<p class="center" style="color:#bbb">
-Beautiful love stories captured with creativity & emotion
-</p>
-<div class="grid">
-<img src="https://images.unsplash.com/photo-1519741497674-611481863552">
-<img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92">
-<img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf">
-</div>
+<header>
+  <h1>Flash Creations</h1>
+  <p>Wedding Photography • Cinematic Films • Creative Stories</p>
+  <a class="btn" href="#contact">Contact Us</a>
+  <a class="btn" href="https://wa.me/918090000072" target="_blank">WhatsApp</a>
+</header>
+
+<div class="container">
+
+<!-- ABOUT -->
+<section id="about" class="card">
+  <h2 class="section-title">About Us</h2>
+  <p style="text-align:center">
+    Flash Creations is a professional wedding photography & cinematography studio
+    based in Lucknow. We capture real emotions, beautiful moments and timeless
+    wedding stories that stay forever.
+  </p>
 </section>
 
-<!-- CANDID -->
-<section class="section dark-bg">
-<h2 class="center">Candid Photography</h2>
-<div class="grid">
-<div class="card">
-<img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9">
-<h3>Real Emotions</h3>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1517841905240-472988babdf9">
-<h3>Natural Moments</h3>
-</div>
-<div class="card">
-<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e">
-<h3>Timeless Memories</h3>
-</div>
-</div>
+<!-- SERVICES -->
+<section id="services">
+  <h2 class="section-title">Our Services</h2>
+  <div class="grid">
+    <div class="card service">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+      <h3>Wedding Photography</h3>
+      <p>Candid & traditional wedding photography.</p>
+    </div>
+    <div class="card service">
+      <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf">
+      <h3>Cinematic Films</h3>
+      <p>Beautiful cinematic wedding films.</p>
+    </div>
+    <div class="card service">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+      <h3>Pre-Wedding</h3>
+      <p>Creative pre-wedding photo & video shoots.</p>
+    </div>
+  </div>
 </section>
 
 <!-- VIDEOS -->
-<section class="section" id="videos">
-<h2 class="center">Wedding Films</h2>
-<div class="grid">
+<section id="videos" class="card">
+  <h2 class="section-title">Wedding Films</h2>
 
-<a href="https://www.youtube.com" target="_blank">
-<img src="https://img.youtube.com/vi/ScMzIvxBSi4/hqdefault.jpg">
-</a>
+  <div class="video-grid">
 
-<a href="https://www.youtube.com" target="_blank">
-<img src="https://img.youtube.com/vi/tgbNymZ7vqY/hqdefault.jpg">
-</a>
+    <div>
+      <iframe src="https://www.youtube.com/embed/CPlCPmGNOJ8" allowfullscreen></iframe>
+      <div class="video-title">Cinematic Wedding Film</div>
+    </div>
 
-<a href="https://www.youtube.com" target="_blank">
-<img src="https://img.youtube.com/vi/l482T0yNkeo/hqdefault.jpg">
-</a>
+    <div>
+      <iframe src="https://www.youtube.com/embed/fMQVL247vNk" allowfullscreen></iframe>
+      <div class="video-title">Pre Wedding Story</div>
+    </div>
 
-</div>
+    <div>
+      <iframe src="https://www.youtube.com/embed/kOJUgsij1wY" allowfullscreen></iframe>
+      <div class="video-title">Wedding Highlights</div>
+    </div>
+
+    <div>
+      <iframe src="https://www.youtube.com/embed/gWaLIxEUJHM" allowfullscreen></iframe>
+      <div class="video-title">Haldi Ceremony</div>
+    </div>
+
+    <div>
+      <iframe src="https://www.youtube.com/embed/Xt43jWmzFYE" allowfullscreen></iframe>
+      <div class="video-title">Beautiful Wedding Moments</div>
+    </div>
+
+  </div>
+
+  <div style="text-align:center;margin-top:30px">
+    <a class="btn" href="https://www.youtube.com/@flashcreations9900" target="_blank">
+      Visit YouTube Channel
+    </a>
+  </div>
 </section>
 
-<!-- INSTAGRAM -->
-<section class="section dark-bg">
-<h2 class="center">Instagram Reels & Shoots</h2>
-<p class="center" style="color:#aaa">
-Follow @flashcreations2016 for latest wedding reels
-</p>
+<!-- CONTACT -->
+<section id="contact" class="card">
+  <h2 class="section-title">Contact Us</h2>
 
-<div class="grid">
-<a href="https://www.instagram.com/flashcreations2016" target="_blank">
-<img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e">
-</a>
-<a href="https://www.instagram.com/flashcreations2016" target="_blank">
-<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1">
-</a>
-<a href="https://www.instagram.com/flashcreations2016" target="_blank">
-<img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc">
-</a>
-</div>
+  <p><b>📍 Address:</b><br>
+  Jankipuram Vistar, Lucknow, Uttar Pradesh</p>
 
-<div class="center">
-<a class="btn" href="https://www.instagram.com/flashcreations2016" target="_blank">
-View Instagram Profile
-</a>
-</div>
+  <p><b>📞 Phone:</b><br>
+  8090000072 / 9621389946</p>
+
+  <p><b>📧 Email:</b><br>
+  flashcreations0@gmail.com</p>
+
+  <div style="text-align:center">
+    <a class="btn" href="https://wa.me/918090000072" target="_blank">
+      Chat on WhatsApp
+    </a>
+    <a class="btn" href="https://www.instagram.com/flashcreations2016" target="_blank">
+      Instagram
+    </a>
+  </div>
 </section>
 
-<!-- FOOTER -->
-<div class="footer">
-📸 Flash Creations <br>
-Instagram: @flashcreations2016
 </div>
+
+<footer>
+  © 2026 Flash Creations | All Rights Reserved
+</footer>
 
 </body>
 </html>
